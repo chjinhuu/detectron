@@ -19,4 +19,3 @@ RUN echo "deb-src http://mirrors.163.com/debian/ stretch-backports main non-free
 RUN echo "deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
 RUN echo "deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib" >> /etc/apt/sources.list
 RUN pip install pycocotools -i https://pypi.tuna.tsinghua.edu.cn/simple/
-RUN python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.8/index.html

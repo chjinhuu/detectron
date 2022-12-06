@@ -1,10 +1,9 @@
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 RUN conda list
 RUN python -V
-RUN conda install numpy=1.18.3
 RUN conda install opencv
 RUN conda install matplotlib 
-RUN conda install tqdm pillow h5py
+RUN conda install h5py
 RUN conda install tensorboard
 RUN conda install future
 RUN conda install scipy

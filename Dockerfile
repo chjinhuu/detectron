@@ -1,7 +1,9 @@
 FROM pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
 RUN conda install numpy matplotlib 
-RUN conda install tqdm pillow h5py 
-RUN conda install tensorboard future opencv
+RUN conda install tqdm pillow h5py
+RUN conda install tensorboard
+RUN conda install future
+RUN conda install opencv
 RUN conda install scipy==1.2.1
 RUN conda install lxml
 RUN cd /etc/apt

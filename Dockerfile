@@ -1,7 +1,6 @@
 FROM pytorch/pytorch:1.9.1-cuda11.1-cudnn8-devel
 RUN conda list
 RUN python -V
-RUN cd /mnt/csip-108
 RUN conda install opencv
 RUN conda install matplotlib 
 RUN conda install h5py
